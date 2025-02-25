@@ -1,7 +1,7 @@
 # Datos Personales
 - **Nombre**: Axel Uriel Gutierrez Maya
 - **Edad**: 21
-- **Fotografía**: ![Foto](ruta/a/tu/foto.jpg)
+- **Fotografía**: ![Foto](./img/Axel.jpeg)
 
 ## Presentación
 Soy Axel Uriel Gutierrez Maya y me apasiona la ciberseguridad mas especificamente en el apartado de pentesting.
