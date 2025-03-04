@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --color-primario: #007bff;
+  --color-secundario: #333;
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  color: var(--color-secundario);
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#inicio, #acerca, #habilidades, #proyectos, #contacto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#acerca img {
+  max-width: 200px;
+  height: 200px;
+  display: block;
+  margin-top: 20px;
+}
+
+#habilidades table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#habilidades th, #habilidades td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#habilidades th {
+  background-color: #007bff;
+  color: white;
+}
+
+#habilidades td {
+  background-color: #f9f9f9;
+}
+
+#proyectos {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.proyecto {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto .contacto-info p,
+#contacto .contacto-form {
+  margin-top: 20px;
+}
+
+.contacto-form {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contacto-form label {
+  font-size: 1.2em;
+}
+
+.contacto-form input, .contacto-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contacto-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contacto-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  #inicio, #acerca, #habilidades, #proyectos, #contacto {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .proyectos-container {
+    grid-template-columns: 1fr 1fr;  /* Dos columnas */
+  }
+
+  #habilidades table {
+    font-size: 0.9rem;
+  }
+
+  .contacto-form input, .contacto-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #inicio, #acerca, #habilidades, #proyectos, #contacto {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .proyectos-container {
+    grid-template-columns: 1fr;  /* Una columna */
+  }
+
+  #habilidades table {
+    font-size: 0.8rem;
+  }
+
+  .contacto-form input, .contacto-form textarea {
+    font-size: 0.8rem;
+  }
+}
+
+/* Para pantallas grandes (desktop) */
+@media screen and (min-width: 1200px) {
+  .proyectos-container {
+    grid-template-columns: repeat(4, 1fr);  /* 4 columnas */
+  }
+}

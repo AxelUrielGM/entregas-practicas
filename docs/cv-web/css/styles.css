@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-:root {
+:root{
   --color-primario: #007bff;
   --color-secundario: #333;
   --fuente-principal: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: var(--fuente-principal);
-  font-size: 1rem;
-  color: var(--color-secundario);
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
+    /* background-color: darksalmon;
+    color: blue; */
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    background-color: #f4f4f4;
+  }
+  
 html {
-  font-size: 100%;
-}
-
+    font-size: 100%;
+  }
+    
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
 
 a {
   color: var(--color-primario);
   text-decoration: none;
 }
 
-a:hover {
-  color: #0056b3;
+a:hover{
+  color: darken(var(--color-primario)), 10%;
   text-decoration: underline;
 }
 
@@ -38,7 +38,7 @@ img {
   height: auto;
 }
 
-#inicio, #acerca, #habilidades, #proyectos, #contacto {
+#inicio {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -46,16 +46,42 @@ img {
   margin-bottom: 20px;
 }
 
-h2 {
+#inicio h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#acerca {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#acerca h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 #acerca img {
   max-width: 200px;
-  height: 200px;
+  border-radius: 50%;
   display: block;
   margin-top: 20px;
+}
+
+#habilidades {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#habilidades h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 #habilidades table {
@@ -84,24 +110,55 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#proyectos h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .proyectos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .proyecto {
+  width: 30%;
+  margin-bottom: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#contacto .contacto-info p,
-#contacto .contacto-form {
-  margin-top: 20px;
+.proyecto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#contacto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#contacto h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contacto-info p {
+  margin: 10px 0;
+}
+
+.contacto-info a {
+  color: #007bff;
+  text-decoration: none;
 }
 
 .contacto-form {
@@ -136,55 +193,49 @@ h2 {
   background-color: #0056b3;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 768px) {
-  #inicio, #acerca, #habilidades, #proyectos, #contacto {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .proyectos-container {
-    grid-template-columns: 1fr 1fr;  /* Dos columnas */
-  }
-
-  #habilidades table {
-    font-size: 0.9rem;
-  }
-
-  .contacto-form input, .contacto-form textarea {
-    font-size: 0.9rem;
-  }
+/* Selector descendiente para los inputs dentro del formulario de contacto */
+.contacto-form input {
+  padding: 12px;
+  font-size: 1.1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-@media screen and (max-width: 480px) {
-  #inicio, #acerca, #habilidades, #proyectos, #contacto {
-    padding: 10px;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  .proyectos-container {
-    grid-template-columns: 1fr;  /* Una columna */
-  }
-
-  #habilidades table {
-    font-size: 0.8rem;
-  }
-
-  .contacto-form input, .contacto-form textarea {
-    font-size: 0.8rem;
-  }
+/* Selector descendiente para las cabeceras de la tabla dentro de las habilidades */
+.tabla-habilidades th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
 }
 
-/* Para pantallas grandes (desktop) */
-@media screen and (min-width: 1200px) {
-  .proyectos-container {
-    grid-template-columns: repeat(4, 1fr);  /* 4 columnas */
-  }
+/* Selector descendiente para las imágenes dentro de los proyectos */
+.proyecto img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+}
+
+p, li, span {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
