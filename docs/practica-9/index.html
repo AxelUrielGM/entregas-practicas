@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Práctica 9</h1>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+            <div id="lista-productos"></div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="lista-carrito"></div>
+            <p id="total-carrito">Total: $0.00</p>
+            <button id="procesar-compra">🛍️ Procesar Compra</button>
+            <p id="mensaje-compra"></p> 
+        </section>
+    </main>
+
+    <section id="registro">
+        <h2>Formulario de Registro</h2>
+        <form id="formulario-registro">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span class="error" id="error-nombre"></span>
+            </div>
+            <div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo">
+                <span class="error" id="error-correo"></span>
+            </div>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña">
+                <span class="error" id="error-contraseña"></span>
+            </div>
+            <div>
+                <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar-contraseña" name="confirmar-contraseña">
+                <span class="error" id="error-confirmar-contraseña"></span>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="mensaje-exito"></p>
+    </section>
+    
+    <script src="./js/main.js"></script> 
+
+    
+</body>
+</html>
