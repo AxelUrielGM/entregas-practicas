@@ -4,137 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licenciatura en Actuaría - UVM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .content {
-            width: 70%;
-            padding-right: 20px;
-            overflow-y: auto;
-            scroll-behavior: smooth;
-        }
-        .sidebar {
-            width: 28%;
-            padding-left: 20px;
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 20px;
-            height: fit-content;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-            display: none;
-            cursor: pointer;
-        }
-        .sidebar h3 {
-            color: #34495e;
-        }
-        .toggle-button, .scroll-button, .scholarship-button, .certifications-button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            width: 100%;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .certifications-image {
-            width: 100%;
-            border-radius: 5px;
-        }
-    </style>
-    <script>
-        function togglePDF() {
-            var pdfViewer = document.getElementById("pdfViewer");
-            if (pdfViewer.style.display === "none" || pdfViewer.style.display === "") {
-                pdfViewer.style.display = "block";
-            } else {
-                pdfViewer.style.display = "none";
-            }
-        }
-        
-        function openFullScreen() {
-            var url = document.getElementById("pdfViewer").src;
-            window.open(url, "_blank");
-        }
-        
-        function scrollToSection() {
-            document.getElementById("trabajos-section").scrollIntoView({ behavior: "smooth" });
-        }
-        
-        function goToScholarshipCalculator() {
-            window.open("https://fichas-precio.uvm.mx/", "_blank");
-        }
-
-        function goToCertifications() {
-            window.location.href = "#certifications-section";
-        }
-    </script>
+    <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
 </head>
 <body>
     <div class="content">
-        <h1>Actuaría (Nueva)</h1>
+        <h1>📊 Licenciatura en Actuaría (Nueva)</h1>
         <p><strong>No Aplica EQ</strong></p>
-        <h2>Negocios</h2>
-        <h3>📊 Licenciatura en Actuaría (NUEVA)</h3>
-        <p><span class="highlight">⏳ Duración:</span> 4 años (12 cuatrimestres)</p>
-        <p><span class="highlight">🛡️ Modalidad:</span> 100% en línea</p>
-        <h3>🌟 Forma parte de los profesionales del futuro.</h3>
-        <p>En UVM te preparamos con herramientas avanzadas para:</p>
-        <ul>
-            <li>Analizar y modelar datos estratégicos.</li>
-            <li>Evaluar riesgos financieros y actuariales.</li>
-            <li>Tomar decisiones basadas en técnicas estadísticas de vanguardia.</li>
-        </ul>
-        <p><span class="highlight">🌎 Inscríbete y Obtén:</span> Certificaciones Internacionales + Cursos UVM GO! Beyond sin costo.</p>
-        <p><span class="highlight">📚 Plan de Estudios:</span> <a href="pdf/lxo-actuaria.pdf" target="_blank">Descargar</a></p>
         
-        <h2 id="trabajos-section">Oportunidades Laborales</h2>
+        <h2>📖 ¿De qué trata la Licenciatura en Actuaría?</h2>
+        <p>La Licenciatura en Actuaría forma profesionales especializados en el análisis y modelado de riesgos financieros, aseguradores y empresariales mediante el uso de herramientas matemáticas, estadísticas y computacionales.</p>
+        
+        <h2>📌 Detalles del Programa</h2>
         <ul>
-            <li><strong>📌 Actuario en Seguros:</strong> Salario competitivo, empresas aseguradoras.</li>
-            <li><strong>📌 Analista de Riesgos:</strong> Trabajo en bancos y consultorías financieras.</li>
-            <li><strong>📌 Científico de Datos:</strong> Industria tecnológica y análisis de Big Data.</li>
-            <li><strong>📌 Consultor Financiero:</strong> Asesoramiento a empresas nacionales e internacionales.</li>
+            <li><strong>⏳ Duración:</strong> 4 años (12 cuatrimestres).</li>
+            <li><strong>🛡️ Modalidad:</strong> 100% en línea, lo que permite flexibilidad y acceso a educación de calidad desde cualquier lugar.</li>
+            <li><strong>📜 Reconocimiento Oficial:</strong> Validez oficial por la SEP, garantizando un título con respaldo académico.</li>
         </ul>
-
-        <h2 id="certifications-section">Certificaciones Internacionales</h2>
-        <p>Obtén certificaciones reconocidas a nivel internacional para mejorar tu perfil profesional.</p>
+        
+        <h2>🌟 Razones para Estudiar en UVM</h2>
+        <ul>
+            <li><strong>Educación con reconocimiento internacional:</strong> La UVM cuenta con acreditaciones que respaldan la calidad educativa.</li>
+            <li><strong>Aprendizaje aplicado:</strong> Desde el primer cuatrimestre, los alumnos trabajan con herramientas y metodologías del mundo real.</li>
+            <li><strong>Formación integral:</strong> Se incluyen certificaciones y programas adicionales para potenciar el perfil profesional.</li>
+            <li><strong>Soporte y acompañamiento:</strong> Asistencia técnica 24/7 a través de Asistencia Lince.</li>
+            <li><strong>Conexión con la industria:</strong> Posibilidad de networking con expertos y empresas del sector financiero y asegurador.</li>
+        </ul>
+        
+        <h2 id="trabajos-section">💼 Oportunidades Laborales</h2>
+        <p>Los egresados de esta licenciatura pueden desempeñarse en múltiples sectores estratégicos:</p>
+        <ul>
+            <li><strong>📌 Actuario en Seguros:</strong> Evaluación y modelado de riesgos en compañías de seguros.</li>
+            <li><strong>📌 Analista de Riesgos:</strong> Trabajo en bancos y consultorías financieras gestionando estrategias de inversión.</li>
+            <li><strong>📌 Científico de Datos:</strong> Aplicación de modelos estadísticos en la industria tecnológica y de Big Data.</li>
+            <li><strong>📌 Consultor Financiero:</strong> Asesoría en toma de decisiones estratégicas para empresas nacionales e internacionales.</li>
+        </ul>
+        
+        <h2 id="certifications-section">🎓 Certificaciones Internacionales</h2>
+        <p>Los alumnos pueden obtener certificaciones que aumentan su competitividad en el mercado laboral. Algunas incluyen:</p>
+        <ul>
+            <li>Certificación en análisis de riesgos.</li>
+            <li>Certificación en Big Data y Machine Learning aplicado a Finanzas.</li>
+            <li>Certificación en software estadístico y actuarial.</li>
+        </ul>
         <img class="certifications-image" src="./certs/certificaciones.png" alt="Certificaciones" style="width: 300px; height: auto;" />
-
+        
+        <h2 id="venta-section">🎯 Tips para Vender la Licenciatura</h2>
+        <p>Explica el valor de la carrera en términos sencillos:</p>
+        <ul>
+            <li><strong>💡</strong> "La Actuaría es una de las profesiones mejor pagadas porque los actuarios ayudan a empresas, aseguradoras y bancos a tomar decisiones con base en datos y estadísticas."</li>
+            <li><strong>🔍</strong> "Hoy en día, todo está basado en datos: empresas de tecnología, bancos y aseguradoras buscan expertos en análisis y predicción de riesgos."</li>
+            <li><strong>📌</strong> "Un actuario puede trabajar en bancos como BBVA, Citibanamex o HSBC, aseguradoras como GNP y AXA, o empresas tecnológicas como Google y Amazon."</li>
+        </ul>
+        
+        <h2 id="objeciones-section">🛑 Objeciones Comunes y Respuestas</h2>
+        <ul>
+            <li><strong>❓</strong> "No sé si hay mucho trabajo en esta área..."<br>✅ "Los actuarios son de los profesionales más demandados y mejor pagados en México."</li>
+            <li><strong>❓</strong> "¿Por qué estudiar en línea y no en presencial?"<br>✅ "La modalidad en línea te permite estudiar sin dejar de trabajar y la UVM tiene respaldo académico con validez SEP."</li>
+            <li><strong>❓</strong> "¿Y si me interesa más la inteligencia artificial o los datos?"<br>✅ "La Actuaría se enfoca en modelos de análisis de datos, predicción, IA y Machine Learning."</li>
+            <li><strong>❓</strong> "No sé si puedo pagar la carrera..."<br>✅ "Tenemos becas académicas, deportivas y culturales, además de opciones de financiamiento."</li>
+        </ul>
     </div>
-
+    
     <div class="sidebar">
-        <h3>📚 Plan de Estudios en Visor PDF</h3>
-        <button class="toggle-button" onclick="togglePDF()">Mostrar/Ocultar PDF</button>
-        <iframe id="pdfViewer" src="pdf/lxo-actuaria.pdf" type="application/pdf" onclick="openFullScreen()"></iframe>
-        <button class="scroll-button" onclick="scrollToSection()">Sección de Trabajo</button>
+        <h3>📌 Barra de Acceso Rápido</h3>
+        <button class="toggle-button" onclick="togglePDF()">📄 Ver Plan de Estudios ▼</button>
+        <iframe id="pdfViewer" src="pdf/lxo-actuaria.pdf" type="application/pdf"></iframe>
+        <button class="scroll-button" onclick="scrollToSection('trabajos-section')">💼 Oportunidades Laborales</button>
+        <button class="certifications-button" onclick="scrollToSection('certifications-section')">🎓 Ver Certificaciones</button>
         <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
-        <button class="certifications-button" onclick="goToCertifications()">Ver Certificaciones</button>
+        <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
+        <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
     </div>
+    
+    <script src="/docs/buscador-web/LXO/js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
