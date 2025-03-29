@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licenciatura en Actuaría - UVM</title>
-    <link rel="stylesheet" href="/entregas-practicas/buscador-web/LXO/css/styles.css">
+    <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
 </head>
 <body>
     <div class="content">
         <h1>📊 Licenciatura en Actuaría (Nueva)</h1>
-        <p><strong>No Aplica EQ</strong></p>
-        
+        <p><strong>Aplica EQ</strong></p>
         <h2>📖 ¿De qué trata la Licenciatura en Actuaría?</h2>
         <p>La Licenciatura en Actuaría forma profesionales especializados en el análisis y modelado de riesgos financieros, aseguradores y empresariales mediante el uso de herramientas matemáticas, estadísticas y computacionales.</p>
         
         <h2>📌 Detalles del Programa</h2>
         <ul>
-            <li><strong>⏳ Duración:</strong> 4 años (12 cuatrimestres).</li>
-            <li><strong>🛡️ Modalidad:</strong> 100% en línea, lo que permite flexibilidad y acceso a educación de calidad desde cualquier lugar.</li>
+            <li><strong>⏳ Duración:</strong> 4 años (12 cuatrimestres) o 3 años (cuatrimestral).</li>
+            <li><strong>🛡️ Modalidad:</strong> 100% en línea, sin necesidad de asistir al campus. 
+                <ul>
+                    <li><strong>Plataforma:</strong> Trabajarás en Blackboard, reconocida a nivel mundial en educación.</li>
+                    <li><strong>Flexibilidad:</strong> Acceso a herramientas 24/7, sin interferencias en tu trabajo o proyectos.</li>
+                    <li><strong>Clases:</strong> 1 a 2 sesiones semanales de 7:00 p.m. a 10:00 p.m. (opcional, sin pase de lista).</li>
+                    <li><strong>Grabaciones:</strong> Las clases se graban para que las puedas revisar cuando quieras.</li>
+                    <li><strong>Soporte:</strong> Contacto directo con Asistente Lince y Orientador Académico, disponibles 24/7.</li>
+                    <li><strong>Recursos:</strong> Acceso a la biblioteca virtual y paquetería de Office incluida.</li>
+                </ul>
+            </li>
             <li><strong>📜 Reconocimiento Oficial:</strong> Validez oficial por la SEP, garantizando un título con respaldo académico.</li>
         </ul>
         
@@ -61,7 +69,6 @@
             <li><strong>❓</strong> "No sé si hay mucho trabajo en esta área..."<br>✅ "Los actuarios son de los profesionales más demandados y mejor pagados en México."</li>
             <li><strong>❓</strong> "¿Por qué estudiar en línea y no en presencial?"<br>✅ "La modalidad en línea te permite estudiar sin dejar de trabajar y la UVM tiene respaldo académico con validez SEP."</li>
             <li><strong>❓</strong> "¿Y si me interesa más la inteligencia artificial o los datos?"<br>✅ "La Actuaría se enfoca en modelos de análisis de datos, predicción, IA y Machine Learning."</li>
-            <li><strong>❓</strong> "No sé si puedo pagar la carrera..."<br>✅ "Tenemos becas académicas, deportivas y culturales, además de opciones de financiamiento."</li>
         </ul>
     </div>
     
@@ -74,9 +81,23 @@
         <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
         <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
         <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
+        <button class="objections-button" onclick="openModal('cursos')">Cursos Beyond</button>
+        <button class="objections-button" onclick="openModal('gym')">Gym Académico</button>
+        <button class="objections-button" onclick="openModal('doble-titulacion')">Doble Titulación NLU</button>
+        <button class="objections-button" onclick="openModal('acreditacion')">Acreditación de Estudios</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
     </div>
     
-    <script src="/entregas-practicas/buscador-web/LXO/js/script.js"></script>
+    <script src="/docs/buscador-web/LXO/js/script.js"></script>
+    <script src="/docs/buscador-web/LXO/js/ventana.js"></script>
 </body>
 </html>
 

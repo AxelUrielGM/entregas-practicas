@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licenciatura Ejecutiva en Diseño Digital - UVM</title>
+  <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
+</head>
+<body>
+  <div class="content">
+    <h1>🎨 Licenciatura Ejecutiva en Diseño Digital</h1>
+    <p><strong>Aplica EQ</strong> | Categoría: Diseño, Arte y Arquitectura</p>
+
+    <h2>📖 ¿De qué trata esta Licenciatura?</h2>
+    <p>Forma profesionales capaces de desarrollar soluciones visuales creativas e innovadoras mediante el uso de herramientas digitales, software especializado y fundamentos de diseño, con aplicación en industrias audiovisuales, web, publicidad y medios digitales.</p>
+
+    <h2>📌 Detalles del Programa</h2>
+    <ul>
+      <li><strong>⏳ Duración:</strong> 3 años (9 cuatrimestres).</li>
+      <li><strong>🛡️ Modalidad:</strong> 100% en línea.
+        <ul>
+          <li><strong>Plataforma:</strong> Blackboard con acceso 24/7.</li>
+          <li><strong>Clases:</strong> 1 a 2 sesiones semanales opcionales (grabadas).</li>
+          <li><strong>Soporte:</strong> Asistencia Lince disponible todo el año.</li>
+          <li><strong>Recursos:</strong> Biblioteca virtual, Office y herramientas de diseño y animación.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🌟 Razones para Estudiar en UVM</h2>
+    <ul>
+      <li><strong>Certificaciones Coursera:</strong> 6 materias certificadas por universidades y empresas internacionales.</li>
+      <li><strong>Doble Titulación:</strong> Posibilidad de obtener título internacional con National Louis University.</li>
+      <li><strong>Formación creativa:</strong> Aprendizaje práctico desde el dibujo hasta la animación y programación web.</li>
+      <li><strong>Alta empleabilidad:</strong> Hasta 80% mejora laboral al egresar (Ipsos/UVM 2020).</li>
+    </ul>
+
+    <h2 id="trabajos-section">💼 Oportunidades Laborales</h2>
+    <p>Como egresado/a podrás trabajar en:</p>
+    <ul>
+      <li><strong>📌 Diseño web y UX/UI:</strong> Creación de interfaces digitales y experiencias de usuario para apps y sitios web.</li>
+      <li><strong>📌 Producción audiovisual:</strong> Edición de video, animación, efectos visuales y postproducción.</li>
+      <li><strong>📌 Publicidad y branding:</strong> Desarrollo de campañas visuales y contenido gráfico para marcas.</li>
+      <li><strong>📌 Medios digitales:</strong> Generación de contenido para plataformas, redes sociales y multimedia.</li>
+      <li><strong>📌 Freelance y emprendimiento:</strong> Desarrollo de proyectos propios, consultoría o estudio creativo independiente.</li>
+    </ul>
+
+    <h2 id="certifications-section">🎓 Certificaciones Internacionales</h2>
+    <ul>
+      <li>Certificaciones laborales integradas al plan de estudios (avaladas por Coursera):
+        <ul>
+          <li>6° Cuatrimestre: Fundamentos de la Ciencia de Datos</li>
+          <li>7° Cuatrimestre: Narrativa con datos</li>
+          <li>8° Cuatrimestre: Elaboración de guion de televisión</li>
+          <li>9° Cuatrimestre: Fundamentos de la nube</li>
+        </ul>
+      </li>
+    </ul>
+    <img class="certifications-image" src="./certs/coursera.png" alt="Certificaciones" style="width: 300px; height: auto;">
+
+    <h2 id="venta-section">🎯 Tips para Vender la Licenciatura</h2>
+    <ul>
+      <li><strong>💡</strong> "Perfecta para personas creativas que disfrutan crear contenido visual, animación y medios digitales."</li>
+      <li><strong>🔍</strong> "Aprenderás desde herramientas gráficas hasta diseño web, 3D y producción audiovisual."</li>
+      <li><strong>📌</strong> "El diseño digital tiene alta demanda en agencias, medios, redes sociales, e-commerce y entretenimiento."</li>
+    </ul>
+
+    <h2 id="objeciones-section">🛑 Objeciones Comunes y Respuestas</h2>
+    <ul>
+      <li><strong>❓</strong> "¿Puedo aprender diseño digital desde casa?"<br>✅ "Sí. Tendrás acceso a software, asesoría docente y proyectos prácticos que simulan la industria real."</li>
+      <li><strong>❓</strong> "¿Se necesita saber dibujar?"<br>✅ "No es obligatorio. Aprenderás técnicas desde cero, tanto tradicionales como digitales."</li>
+      <li><strong>❓</strong> "¿Tiene salida laboral?"<br>✅ "Sí. Es una de las áreas con mayor demanda gracias a las industrias creativas, medios y tecnología."</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <h3>📌 Barra de Acceso Rápido</h3>
+    <button class="toggle-button" onclick="togglePDF()">📄 Ver Plan de Estudios ▼</button>
+    <iframe id="pdfViewer" src="pdf/lxo-diseno-digital.pdf" type="application/pdf"></iframe>
+    <button class="scroll-button" onclick="scrollToSection('trabajos-section')">💼 Oportunidades Laborales</button>
+    <button class="certifications-button" onclick="scrollToSection('certifications-section')">🎓 Ver Certificaciones</button>
+    <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
+    <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
+    <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
+    <button class="objections-button" onclick="openModal('cursos')">Cursos Beyond</button>
+    <button class="objections-button" onclick="openModal('gym')">Gym Académico</button>
+    <button class="objections-button" onclick="openModal('doble-titulacion')">Doble Titulación NLU</button>
+    <button class="objections-button" onclick="openModal('acreditacion')">Acreditación de Estudios</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/docs/buscador-web/LXO/js/script.js"></script>
+  <script src="/docs/buscador-web/LXO/js/ventana.js"></script>
+</body>
+</html>

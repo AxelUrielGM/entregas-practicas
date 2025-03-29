@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería Ejecutiva en Electrónica - UVM</title>
+  <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
+</head>
+<body>
+  <div class="content">
+    <h1>⚙️ Ingeniería Ejecutiva en Electrónica</h1>
+    <p><strong>Aplica EQ</strong> | Categoría: Ingeniería</p>
+
+    <h2>📖 ¿De qué trata esta Ingeniería?</h2>
+    <p>Forma ingenieros con conocimientos en electrónica de potencia, sistemas embebidos y control, capaces de diseñar, implementar y evaluar soluciones tecnológicas aplicadas a las energías renovables, automatización y electrónica avanzada.</p>
+
+    <h2>📌 Detalles del Programa</h2>
+    <ul>
+      <li><strong>⏳ Duración:</strong> 4 años (12 cuatrimestres).</li>
+      <li><strong>🛡️ Modalidad:</strong> 100% en línea.
+        <ul>
+          <li><strong>Plataforma:</strong> Blackboard disponible 24/7.</li>
+          <li><strong>Clases:</strong> 1 a 2 sesiones semanales opcionales (grabadas).</li>
+          <li><strong>Soporte:</strong> Asistencia Lince 24/7 durante todo el año.</li>
+          <li><strong>Recursos:</strong> Biblioteca virtual, Office y herramientas tecnológicas.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🌟 Razones para Estudiar en UVM</h2>
+    <ul>
+      <li><strong>Doble Titulación:</strong> Opción de obtener título internacional con National Louis University (EE.UU.).</li>
+      <li><strong>Certificaciones Internacionales:</strong> Cursos integrados al plan avalados por Coursera y empresas líderes.</li>
+      <li><strong>Internacionalización:</strong> Viajes académicos, ciclos con expertos extranjeros y experiencias globales.</li>
+      <li><strong>Alta empleabilidad:</strong> 80% mejora su situación laboral al egresar (Ipsos/UVM 2020).</li>
+    </ul>
+
+    <h2 id="trabajos-section">💼 Oportunidades Laborales</h2>
+    <p>Podrás desarrollarte profesionalmente en industrias como:</p>
+    <ul>
+      <li><strong>📌 Electrónica de potencia:</strong> Diseño e implementación de sistemas de conversión y control de energía.</li>
+      <li><strong>📌 Automatización y control:</strong> Integración de sistemas embebidos, sensores y programación avanzada.</li>
+      <li><strong>📌 Manufactura y automotriz:</strong> Diseño y mantenimiento de sistemas electrónicos y robóticos.</li>
+      <li><strong>📌 Energías renovables:</strong> Aplicación de tecnología para conversión, almacenamiento y eficiencia energética.</li>
+      <li><strong>📌 Consultoría y desarrollo tecnológico:</strong> Soluciones innovadoras en hardware/software para distintas industrias.</li>
+    </ul>
+
+    <h2 id="certifications-section">🎓 Certificaciones Internacionales</h2>
+    <img class="certifications-image" src="./certs/ingenieria-electronica.png" alt="Certificaciones" style="width: 300px; height: auto;">
+
+    <h2 id="venta-section">🎯 Tips para Vender la Ingeniería</h2>
+    <ul>
+      <li><strong>💡</strong> "Ideal si te gusta la tecnología, la energía, los sistemas inteligentes y la automatización."</li>
+      <li><strong>🔍</strong> "Podrás trabajar con energías renovables, automatización industrial, electrónica avanzada y sistemas embebidos."</li>
+      <li><strong>📌</strong> "Es una ingeniería con fuerte demanda en sectores industriales, energéticos y tecnológicos."</li>
+    </ul>
+
+    <h2 id="objeciones-section">🛑 Objeciones Comunes y Respuestas</h2>
+    <ul>
+      <li><strong>❓</strong> "¿Tengo que saber mucho de matemáticas o programación?"<br>✅ "No necesitas conocimientos previos. Aprenderás desde lo básico hasta lo avanzado paso a paso."</li>
+      <li><strong>❓</strong> "¿Es confiable estudiar ingeniería en línea?"<br>✅ "Sí. El modelo está diseñado para aprendizaje práctico con herramientas digitales y acompañamiento constante."</li>
+      <li><strong>❓</strong> "¿Qué certificaciones obtengo?"<br>✅ "Recibirás credenciales laborales con validez internacional desde Coursera y líderes del sector."</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <h3>📌 Barra de Acceso Rápido</h3>
+    <button class="toggle-button" onclick="togglePDF()">📄 Ver Plan de Estudios ▼</button>
+    <iframe id="pdfViewer" src="pdf/lxo-ing-electronica.pdf" type="application/pdf"></iframe>
+    <button class="scroll-button" onclick="scrollToSection('trabajos-section')">💼 Oportunidades Laborales</button>
+    <button class="certifications-button" onclick="scrollToSection('certifications-section')">🎓 Ver Certificaciones</button>
+    <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
+    <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
+    <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
+    <button class="objections-button" onclick="openModal('cursos')">Cursos Beyond</button>
+    <button class="objections-button" onclick="openModal('gym')">Gym Académico</button>
+    <button class="objections-button" onclick="openModal('doble-titulacion')">Doble Titulación NLU</button>
+    <button class="objections-button" onclick="openModal('acreditacion')">Acreditación de Estudios</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/docs/buscador-web/LXO/js/script.js"></script>
+  <script src="/docs/buscador-web/LXO/js/ventana.js"></script>
+</body>
+</html>

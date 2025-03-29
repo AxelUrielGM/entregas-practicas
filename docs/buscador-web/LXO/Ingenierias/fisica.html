@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería Ejecutiva en Física - UVM</title>
+  <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
+</head>
+<body>
+  <div class="content">
+    <h1>⚛️ Ingeniería Ejecutiva en Física</h1>
+    <p><strong>Aplica EQ</strong> | Categoría: Ingeniería</p>
+
+    <h2>📖 ¿De qué trata esta Ingeniería?</h2>
+    <p>Forma ingenieros con capacidad para diseñar soluciones sostenibles, utilizar instrumentos de medición avanzados y aplicar el método científico para resolver problemas complejos en áreas como automatización, materiales, control, energía o salud.</p>
+
+    <h2>📌 Detalles del Programa</h2>
+    <ul>
+      <li><strong>⏳ Duración:</strong> 4 años (12 cuatrimestres).</li>
+      <li><strong>🛡️ Modalidad:</strong> 100% en línea.
+        <ul>
+          <li><strong>Plataforma:</strong> Blackboard con acceso 24/7.</li>
+          <li><strong>Clases:</strong> 1 a 2 sesiones semanales opcionales (grabadas).</li>
+          <li><strong>Soporte:</strong> Asistencia Lince y asesoría académica continua.</li>
+          <li><strong>Recursos:</strong> Biblioteca virtual, Office y software especializado.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🌟 Razones para Estudiar en UVM</h2>
+    <ul>
+      <li><strong>Doble Titulación:</strong> Opción a obtener título en EE.UU. con National Louis University.</li>
+      <li><strong>Certificaciones Coursera:</strong> Certificaciones laborales internacionales integradas al plan.</li>
+      <li><strong>Enfoque científico-tecnológico:</strong> Uso de tecnología aplicada, simulación, automatización y materiales avanzados.</li>
+      <li><strong>Alta empleabilidad:</strong> Hasta 80% mejora laboral tras egresar (Ipsos/UVM 2020).</li>
+    </ul>
+
+    <h2 id="trabajos-section">💼 Oportunidades Laborales</h2>
+    <p>Podrás trabajar en sectores de ciencia, industria y tecnología, como:</p>
+    <ul>
+      <li><strong>📌 Investigación aplicada:</strong> En instituciones académicas, centros de investigación o desarrollo científico-tecnológico.</li>
+      <li><strong>📌 Automatización de procesos:</strong> Diseño de soluciones para control de calidad, producción o instrumentación electrónica.</li>
+      <li><strong>📌 Desarrollo de materiales:</strong> Innovación en materiales sostenibles, semiconductores o compuestos avanzados.</li>
+      <li><strong>📌 Sector farmacéutico y médico:</strong> Diseño de dispositivos o implementación de procesos tecnológicos en salud.</li>
+      <li><strong>📌 Educación o divulgación científica:</strong> Actividades académicas, contenido educativo y comunicación de la ciencia.</li>
+    </ul>
+
+    <h2 id="certifications-section">🎓 Certificaciones Internacionales</h2>
+    <img class="certifications-image" src="./certs/fisica.png" alt="Certificaciones" style="width: 300px; height: auto;">
+
+    <h2 id="venta-section">🎯 Tips para Vender la Ingeniería</h2>
+    <ul>
+      <li><strong>💡</strong> "Ideal si te gusta la ciencia, los experimentos y resolver problemas complejos con base en modelos físicos y matemáticos."</li>
+      <li><strong>🔍</strong> "Podrás desarrollar soluciones innovadoras en tecnología, salud, automatización, materiales y más."</li>
+      <li><strong>📌</strong> "Esta carrera te permite vincularte con centros de investigación, industrias de alta tecnología o formar tu propio proyecto de innovación."</li>
+    </ul>
+
+    <h2 id="objeciones-section">🛑 Objeciones Comunes y Respuestas</h2>
+    <ul>
+      <li><strong>❓</strong> "¿Debo ser bueno en matemáticas?"<br>✅ "No necesitas ser experto. La carrera te acompaña desde los fundamentos hasta el uso aplicado de herramientas científicas."</li>
+      <li><strong>❓</strong> "¿Es muy teórica?"<br>✅ "No. Tiene materias prácticas de simulación, análisis de circuitos, automatización y diseño experimental."</li>
+      <li><strong>❓</strong> "¿Solo puedo trabajar en investigación?"<br>✅ "No. También puedes trabajar en empresas tecnológicas, sector salud, energía, electrónica y más."</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <h3>📌 Barra de Acceso Rápido</h3>
+    <button class="toggle-button" onclick="togglePDF()">📄 Ver Plan de Estudios ▼</button>
+    <iframe id="pdfViewer" src="pdf/lxo-ing-fisica.pdf" type="application/pdf"></iframe>
+    <button class="scroll-button" onclick="scrollToSection('trabajos-section')">💼 Oportunidades Laborales</button>
+    <button class="certifications-button" onclick="scrollToSection('certifications-section')">🎓 Ver Certificaciones</button>
+    <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
+    <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
+    <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
+    <button class="objections-button" onclick="openModal('cursos')">Cursos Beyond</button>
+    <button class="objections-button" onclick="openModal('gym')">Gym Académico</button>
+    <button class="objections-button" onclick="openModal('doble-titulacion')">Doble Titulación NLU</button>
+    <button class="objections-button" onclick="openModal('acreditacion')">Acreditación de Estudios</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/docs/buscador-web/LXO/js/script.js"></script>
+  <script src="/docs/buscador-web/LXO/js/ventana.js"></script>
+</body>
+</html>

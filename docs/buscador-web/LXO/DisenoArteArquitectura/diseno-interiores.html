@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licenciatura Ejecutiva en Diseño de Interiores - UVM</title>
+  <link rel="stylesheet" href="/docs/buscador-web/LXO/css/styles.css">
+</head>
+<body>
+  <div class="content">
+    <h1>🪑 Licenciatura Ejecutiva en Diseño de Interiores</h1>
+    <p><strong>Aplica EQ</strong> | Categoría: Diseño, Arte y Arquitectura</p>
+
+    <h2>📖 ¿De qué trata esta Licenciatura?</h2>
+    <p>Forma profesionales creativos capaces de transformar espacios interiores en ambientes funcionales, estéticos y saludables, aplicando conocimientos técnicos, tendencias actuales y herramientas digitales para la gestión integral de proyectos de interiorismo.</p>
+
+    <h2>📌 Detalles del Programa</h2>
+    <ul>
+      <li><strong>⏳ Duración:</strong> 3 años (9 cuatrimestres).</li>
+      <li><strong>🛡️ Modalidad:</strong> 100% en línea.
+        <ul>
+          <li><strong>Plataforma:</strong> Blackboard con acceso 24/7.</li>
+          <li><strong>Clases:</strong> 1 a 2 sesiones semanales opcionales (grabadas).</li>
+          <li><strong>Soporte:</strong> Asistencia Lince 24/7.</li>
+          <li><strong>Recursos:</strong> Biblioteca virtual, Office y software de diseño.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🌟 Razones para Estudiar en UVM</h2>
+    <ul>
+      <li><strong>Certificaciones laborales:</strong> 5 asignaturas certificadas con contenido avalado por Coursera y universidades líderes.</li>
+      <li><strong>Doble Titulación:</strong> Título nacional + opción internacional con National Louis University.</li>
+      <li><strong>Internacionalización:</strong> Cursos, viajes académicos y conferencias con expertos internacionales.</li>
+      <li><strong>Alta empleabilidad:</strong> Hasta 80% de mejora laboral según encuestas de egresados.</li>
+    </ul>
+
+    <h2 id="trabajos-section">💼 Oportunidades Laborales</h2>
+    <p>Al egresar, podrás desempeñarte en:</p>
+    <ul>
+      <li><strong>📌 Empresas de interiorismo y arquitectura:</strong> Diseño y adecuación de espacios para vivienda, comercio u oficinas.</li>
+      <li><strong>📌 Espacios efímeros:</strong> Creación de stands, escenografías, exposiciones o eventos.</li>
+      <li><strong>📌 Paisajismo y espacios culturales:</strong> Diseño de zonas verdes, galerías o entornos recreativos.</li>
+      <li><strong>📌 Estudio propio:</strong> Consultoría o emprendimiento especializado en interiorismo, ambientación y mobiliario.</li>
+    </ul>
+
+    <h2 id="certifications-section">🎓 Certificaciones Internacionales</h2>
+    <img class="certifications-image" src="./certs/diseno-interiores.png" alt="Certificaciones" style="width: 300px; height: auto;">
+
+    <h2 id="venta-section">🎯 Tips para Vender la Licenciatura</h2>
+    <ul>
+      <li><strong>💡</strong> "Ideal para personas creativas con interés en transformar espacios y mejorar la calidad de vida de los usuarios."</li>
+      <li><strong>🔍</strong> "Aprenderás desde teoría del color, mobiliario, tendencias y sustentabilidad, hasta modelado digital y supervisión de obra."</li>
+      <li><strong>📌</strong> "Puedes trabajar por tu cuenta, en empresas o estudios de diseño, arquitectura, retail o eventos."</li>
+    </ul>
+
+    <h2 id="objeciones-section">🛑 Objeciones Comunes y Respuestas</h2>
+    <ul>
+      <li><strong>❓</strong> "¿Puedo aprender diseño de interiores en línea?"<br>✅ "Sí, con herramientas digitales, asesoría docente y proyectos prácticos, aprenderás a diseñar profesionalmente desde casa."</li>
+      <li><strong>❓</strong> "¿Tiene campo laboral?"<br>✅ "Sí. El diseño de interiores es clave en empresas, comercios, oficinas y proyectos residenciales."</li>
+      <li><strong>❓</strong> "¿Necesito saber dibujo o arquitectura?"<br>✅ "No. Aprenderás desde los fundamentos, incluyendo representación gráfica y software especializado."</li>
+    </ul>
+  </div>
+
+  <div class="sidebar">
+    <h3>📌 Barra de Acceso Rápido</h3>
+    <button class="toggle-button" onclick="togglePDF()">📄 Ver Plan de Estudios ▼</button>
+    <iframe id="pdfViewer" src="pdf/lxo-diseno-interiores.pdf" type="application/pdf"></iframe>
+    <button class="scroll-button" onclick="scrollToSection('trabajos-section')">💼 Oportunidades Laborales</button>
+    <button class="certifications-button" onclick="scrollToSection('certifications-section')">🎓 Ver Certificaciones</button>
+    <button class="scholarship-button" onclick="goToScholarshipCalculator()">▶️ Calculadora de Becas</button>
+    <button class="sales-button" onclick="scrollToSection('venta-section')">🎯 Tips de Venta</button>
+    <button class="objections-button" onclick="scrollToSection('objeciones-section')">🛑 Manejo de Objeciones</button>
+    <button class="objections-button" onclick="openModal('cursos')">Cursos Beyond</button>
+    <button class="objections-button" onclick="openModal('gym')">Gym Académico</button>
+    <button class="objections-button" onclick="openModal('doble-titulacion')">Doble Titulación NLU</button>
+    <button class="objections-button" onclick="openModal('acreditacion')">Acreditación de Estudios</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/docs/buscador-web/LXO/js/script.js"></script>
+  <script src="/docs/buscador-web/LXO/js/ventana.js"></script>
+</body>
+</html>
