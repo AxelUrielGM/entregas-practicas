@@ -38,7 +38,7 @@ function openModal(section) {
 
             <p>Pagina de UVM GO <a href="https://go.uvm.mx/cursos" target="_blank">sitio web</a>.</p>
         
-            <img src="/docs/buscador-web/LXO/img/cursos-beyond.jpg" alt="Cursos Beyond" style="width:100%; border-radius: 10px;">
+            <img src="/entregas-practicas/buscador-web/LXO/img/cursos-beyond.jpg" alt="Cursos Beyond" style="width:100%; border-radius: 10px;">
         `;
     } else if (section === "gym") {
         title = "Gym Académico";
@@ -49,7 +49,7 @@ function openModal(section) {
             <h3>📜 ¿Qué es el GYM Académico?</h3>
             <p>El GYM Académico es una serie de sesiones en línea organizadas semanalmente, cada una enfocada en un área clave para el desempeño académico. Durante estas sesiones, los estudiantes pueden aprender sobre temas como matemáticas, técnicas de estudio, redacción académica, gestión del tiempo, y más. Las sesiones están diseñadas para que el estudiante pueda obtener una base sólida antes del inicio de clases.</p>
 
-            <img src="/docs/buscador-web/LXO/img/gym-academico.jpg" alt="Gym Académico" style="width:100%; border-radius: 10px;">
+            <img src="/entregas-practicas/buscador-web/LXO/img/gym-academico.jpg" alt="Gym Académico" style="width:100%; border-radius: 10px;">
 
             <h3>🔄 ¿Cómo funciona?</h3>
             <p>El programa se lleva a cabo desde el <strong>23 de septiembre hasta el 13 de diciembre de 2024</strong>. Cada sesión se realiza en un día específico de la semana, con horarios estándar (CDMX) y un enlace de acceso directo. Los estudiantes deben registrarse con su nombre completo y asistir puntualmente. <strong>Las sesiones se proporcionan mediante un PDF con vínculos por un Asesor Educativo una vez que el PPT confirma el pago.</strong></p>
