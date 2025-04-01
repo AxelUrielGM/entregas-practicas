@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    text-align: center;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #ff6600, #ff3300);
+    color: white;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #productos {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  #carrito {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+    overflow-y: auto;
+    position: sticky;
+    top: 80px;
+  }
+  
+  section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  section:hover {
+    transform: scale(1.02);
+  }
+  
+  button {
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .agregar {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 3px 8px rgba(40, 167, 69, 0.4);
+  }
+  
+  .eliminar {
+    background: #dc3545;
+    color: white;
+    box-shadow: 0 3px 8px rgba(220, 53, 69, 0.4);
+  }
+  
+  .restar {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 3px 8px rgba(255, 204, 0, 0.4);
+  }
+  
+  .sumar {
+    background: #17a2b8;
+    color: white;
+    box-shadow: 0 3px 8px rgba(23, 162, 184, 0.4);
+  }
+  
+  #procesar-compra {
+    background: #ff9900;
+    color: white;
+    box-shadow: 0 3px 8px rgba(255, 153, 0, 0.4);
+  }
+  
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff6600;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #carrito {
+      position: static;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
