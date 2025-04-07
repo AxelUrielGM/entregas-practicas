@@ -2,13 +2,13 @@
 
 ## 📌 Nombre del Proyecto
 
-**Buscador Web UVM - LXO**
+**Buscador Web  - LXO**
 
 ---
 
 ## 📖 Descripción clara y concisa
 
-**Buscador Web UVM - LXO** es una aplicación web especializada que permite a los asesores comerciales de UVM consultar rápidamente información precisa sobre licenciaturas ejecutivas en línea, facilitando y optimizando el proceso de venta.
+**Buscador Web  - LXO** es una aplicación web especializada que permite a los asesores comerciales de Universidad consultar rápidamente información precisa sobre licenciaturas ejecutivas en línea, facilitando y optimizando el proceso de venta asi como el envio de informacion por whatsapp de manera rapida sobre promociones de las licenciaturas.
 
 ---
 
@@ -60,8 +60,8 @@
 ## 🧑‍💻 Estrategia Técnica
 
 ### 🎨 Frontend
-- `React.js` para interactividad fluida  
-- `TailwindCSS` para diseño ágil y adaptable  
+- `HTML Y JAVA` para interactividad fluida  
+- `CSS` para diseño ágil y adaptable  
 - Diseño responsivo garantizado (desktop, tablet, móvil)  
 
 ### 🔧 Backend
@@ -70,12 +70,11 @@
 
 ### 📦 Bases de Datos
 - Prototipado con `Firebase Firestore`  
-- Producción: `MongoDB` (recomendado) o `MySQL`  
+- Producción: `MongoDB` o `MySQL`  
 
 ### ⚡ Extras Técnicos
 - API de WhatsApp o enlaces personalizados  
-- Formularios conectados a base de datos + envío por correo  
-- Hosting en `Vercel` o `Netlify`  
+- Formularios conectados a base de datos + envío por correo    
 
 ---
 
