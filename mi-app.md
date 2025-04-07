@@ -1,129 +1,103 @@
-Propuesta Mejorada del Proyecto Semestral
+# 🚀 Propuesta Mejorada del Proyecto Semestral
 
-a. Nombre del Proyecto
+## 📌 Nombre del Proyecto
 
-Buscador Web UVM - LXO
+**Buscador Web UVM - LXO**
 
-b. Descripción clara y concisa
+---
 
-Buscador Web UVM - LXO es una aplicación web especializada que permite a los asesores comerciales de UVM consultar rápidamente información precisa sobre licenciaturas ejecutivas en línea, para mejorar y agilizar el proceso de venta.
+## 📖 Descripción clara y concisa
 
-Beneficios claros para el usuario:
+**Buscador Web UVM - LXO** es una aplicación web especializada que permite a los asesores comerciales de UVM consultar rápidamente información precisa sobre licenciaturas ejecutivas en línea, facilitando y optimizando el proceso de venta.
 
-Ahorro de tiempo en la consulta de información.
+---
 
-Reducción de errores y omisiones.
+## 🌟 Beneficios Claros para el Usuario
 
-Incremento en la efectividad del proceso de venta.
+- ✅ Ahorro de tiempo en la consulta de información  
+- ✅ Reducción de errores y omisiones  
+- ✅ Incremento en la efectividad del proceso de venta  
 
-c. Funciones específicas de la aplicación:
+---
 
-Autenticación segura:
+## ⚙️ Funciones Específicas de la Aplicación
 
-Ingreso con correo institucional y contraseña.
+### 🔐 Autenticación Segura
+- Acceso mediante correo institucional y contraseña  
+- Validación por Firebase Auth o Auth0  
 
-Validación mediante Firebase Auth o Auth0.
+### 🔍 Panel de Búsqueda Avanzada
+- Búsqueda predictiva por nombre o palabras clave  
+- Filtros avanzados: categoría, modalidad, duración, certificaciones, recursos  
 
-Panel de búsqueda avanzada:
+### 📚 Información Detallada por Licenciatura
+- Planes de estudio oficiales integrados (PDF)  
+- Certificaciones destacadas por cuatrimestre  
+- Modalidad, duración, recursos incluidos y ventajas competitivas  
+- Tips estratégicos para asesores  
+- Respuestas rápidas ante objeciones frecuentes  
 
-Búsqueda predictiva por nombre o palabra clave.
+### 🎯 Recursos Interactivos Adicionales
+- Calculadora dinámica de becas  
+- Descarga directa de PDFs informativos  
+- Acceso a recursos emergentes (doble titulación, cursos beyond, acreditaciones internacionales)  
 
-Filtros avanzados por categoría, modalidad, duración, certificaciones, recursos disponibles, etc.
+### 📲 Funciones Sociales y de Gestión
+- Botón para contacto directo vía WhatsApp (mensajes prellenados)  
+- Formulario rápido de captación de prospectos (validación automática)  
+- Sistema de favoritos para seguimiento de carreras  
 
-Información detallada por licenciatura:
+---
 
-Plan de estudios oficial integrado (PDF visualizable).
+## 🛠️ Panel Administrativo
 
-Certificaciones específicas y destacadas por cuatrimestre.
+- Gestión simplificada de contenidos (añadir, editar, eliminar)  
+- Control de accesos por roles (administrador / usuario regular)  
+- Registro automático de actividades (logs)  
 
-Modalidad, duración, recursos incluidos y ventajas competitivas.
+---
 
-Tips estratégicos para asesores.
+## 🧑‍💻 Estrategia Técnica
 
-Respuestas rápidas a objeciones frecuentes.
+### 🎨 Frontend
+- `React.js` para interactividad fluida  
+- `TailwindCSS` para diseño ágil y adaptable  
+- Diseño responsivo garantizado (desktop, tablet, móvil)  
 
-Recursos adicionales interactivos:
+### 🔧 Backend
+- `Node.js` con `Express` para gestión de rutas y API REST  
+- Autenticación segura mediante `JWT`  
 
-Calculadora dinámica de becas.
+### 📦 Bases de Datos
+- Prototipado con `Firebase Firestore`  
+- Producción: `MongoDB` (recomendado) o `MySQL`  
 
-Descargas directas de PDFs informativos.
+### ⚡ Extras Técnicos
+- API de WhatsApp o enlaces personalizados  
+- Formularios conectados a base de datos + envío por correo  
+- Hosting en `Vercel` o `Netlify`  
 
-Accesos rápidos a recursos emergentes (doble titulación, cursos beyond, acreditaciones internacionales).
+---
 
-Funcionalidades sociales y de gestión:
+## 🎨 Diseño Visual (Moodboard)
 
-Botón integrado para contacto directo vía WhatsApp con parámetros prellenados.
+- Interfaz limpia, minimalista y accesible  
+- Grid visual efectivo  
+- Paleta suave: blanco, azul claro, gris  
+- Iconografía intuitiva (estilo LMS o CRMs ligeros)  
 
-Formulario rápido para captar prospectos con validación automática.
+---
 
-Sistema de favoritos para seguimiento de carreras.
+## 🗃️ Algoritmo Simplificado
 
-Panel Administrativo:
+1. Inicio de sesión del usuario  
+2. Validación de credenciales  
+3. Acceso al panel principal con búsqueda y filtros  
+4. Visualización completa de información de licenciaturas  
+5. Interacción con recursos (PDFs, tips, calculadoras)  
+6. Gestión de favoritos  
+7. Contacto con prospectos (WhatsApp/Formulario)  
+8. Administración de contenido por usuarios autorizados  
+9. Registro de actividades y cierre seguro de sesión  
 
-Gestión simplificada de contenido (añadir, editar y eliminar información).
-
-Control de acceso por roles (administrador y usuario normal).
-
-Registro automático de acciones para auditoría (logs).
-
-d. Estrategia técnica específica:
-
-Frontend:
-
-React.js para una experiencia interactiva y fluida.
-
-TailwindCSS para diseño ágil y adaptable.
-
-Responsive Design garantizado (desktop, tablet y móvil).
-
-Backend:
-
-Node.js con Express para gestión robusta de rutas y APIs REST.
-
-Seguridad mediante autenticación JWT.
-
-Bases de Datos:
-
-Prototipado rápido con Firebase Firestore.
-
-Versión de producción en MongoDB (recomendado) o MySQL.
-
-Extras Técnicos:
-
-WhatsApp API o links personalizados con mensajes predefinidos.
-
-Formularios conectados directamente a base de datos y correo electrónico.
-
-Hosting confiable con Vercel o Netlify.
-
-e. Diseño visual claro (Moodboard):
-
-Interfaz limpia y minimalista.
-
-Uso de grid para organización visual efectiva.
-
-Paleta cromática suave (blancos, azules claros y grises).
-
-Iconografía intuitiva similar a plataformas LMS o CRMs ligeros.
-
-f. Algoritmo simplificado:
-
-Inicio de sesión del usuario.
-
-Validación de credenciales.
-
-Acceso al panel principal con búsqueda y filtros.
-
-Visualización completa de información de licenciaturas.
-
-Interacción con recursos (PDFs, tips, calculadoras).
-
-Guardado y gestión de favoritos.
-
-Contacto rápido con prospectos (WhatsApp/Formulario).
-
-Administración sencilla del contenido por administradores autorizados.
-
-Registro automático de actividades y cierre seguro de sesión.
-
-
+![Diagrama de flujo del sistema](./img/diagrama_flujo.png)
